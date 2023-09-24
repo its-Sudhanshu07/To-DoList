@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7c4dc178f1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Division to create space for adding task to the list -->
+
+   <div class="container">
+    <div class="todo-app">
+      <h2>To-Do List <img src="images/to-do-image.jpeg" alt=""></h2>
+      <div class="row"><i class="fa-solid fa-clipboard-list"></i><input type="text" id="input-box" placeholder="Type your to-do list">
+        <button onclick="addTask()"> <img src="images/add.jpeg"></button>
+      </div>
+      <i class="fa-solid fa-check-to-slot dobCheck" style="color: #828282;"></i><span class="selectall">Completed all tasks</span>
+      <div class="space"></div>
+      <span class="deleteAll">Clear completed</span>
+      <hr>
+
+<!-- Here goes List addition and remove area -->
+
+      <ul id="list-container">
+        <!-- <li class="checked">Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+        <li>Task 4</li> -->
+      </ul>
+      <hr>
+
+      <div class="complete">
+      <p><span id="countTask">0</span> Tasks left</p>
+      <span class="incomplete" style="margin-left: 0px;">Incomplete</span>
+      <span class="completed">Completed</span>
+      </div>
+    </div>
+   </div>
+
+
+<script src="script.js"></script>
+  </body>
+</body>
+</html>
